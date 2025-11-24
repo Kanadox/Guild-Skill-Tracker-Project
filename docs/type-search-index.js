@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"edu.ma.westfield.skillguildtracker","l":"Adventurer"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"edu.ma.westfield.skillguildtracker","l":"Guild"},{"p":"edu.ma.westfield.skillguildtracker","l":"ProcessingApp"},{"p":"edu.ma.westfield.skillguildtracker","l":"Skill"}];updateSearchResults();

@@ -4,7 +4,18 @@ import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+/**
+ * Provides operations for filtering, analyzing, and modifying adventurers
+ * and guilds. Also contains a simple interactive demo in {@link #main(String[])}.
+ */
 public class ProcessingApp {
+    /**
+     * Returns a list of adventurers from all guilds who satisfy the given condition.
+     *
+     * @param guilds     the collection of guilds to search through
+     * @param condition  a predicate defining which adventurers to include
+     * @return a list of adventurers that match the condition
+     */
     public static List<Adventurer> filterAdventurers(List<Guild> guilds, Predicate<Adventurer> condition) {
         return guilds.stream()
                 .flatMap(g -> (g.getAdventurers().stream()))
@@ -12,6 +23,12 @@ public class ProcessingApp {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * A simple interactive console application that allows the user to
+     * filter and explore a predefined set of guilds and adventurers.
+     *
+     * @param args command-line arguments (unused)
+     */
     public static void main(String[] args) {
         int choice = 0;
         Scanner scanner = new Scanner(System.in);
