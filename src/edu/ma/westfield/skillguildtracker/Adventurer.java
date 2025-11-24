@@ -1,3 +1,5 @@
+package edu.ma.westfield.skillguildtracker;
+
 import java.util.List;
 
 public class Adventurer implements Comparable<Adventurer> {
@@ -60,13 +62,11 @@ public class Adventurer implements Comparable<Adventurer> {
 
     @Override
     public String toString() {
-        return "Adventurer{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", role='" + role + '\'' +
-                ", goldEarned=" + goldEarned +
-                ", skills=" + skills +
-                '}';
+        return name +
+                " (Role: " + role +
+                ", Age: " + age +
+                ", Gold: " + goldEarned +
+                ") Skills: " + skills;
     }
 
     @Override

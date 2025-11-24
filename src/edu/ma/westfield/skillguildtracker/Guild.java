@@ -1,3 +1,5 @@
+package edu.ma.westfield.skillguildtracker;
+
 import java.util.List;
 
 public class Guild implements Comparable<Guild> {
